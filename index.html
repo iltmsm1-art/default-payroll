@@ -3,22 +3,23 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <title>If You Need Payroll for a Small U.S. Company</title>
-  <meta name="description" content="A one-page decision memo that picks a sensible default payroll tool for small U.S. companies. Skip the research, get moving." />
+  <meta name="description" content="A one-page decision memo that picks a sensible default payroll tool for small U.S. companies." />
 
   <style>
     :root{
       --text:#111;
       --muted:#666;
       --border:#e9e9e9;
-      --bg:#fff;
+      --bg:#ffffff;
       --btn:#111;
       --btnText:#fff;
+      --btnHover:#000;
       --max:900px;
       --radius:14px;
-      --shadow: 0 10px 26px rgba(0,0,0,.10);
     }
-    *{ box-sizing:border-box; }
+    *{box-sizing:border-box}
     body{
       margin:0;
       font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
@@ -29,18 +30,18 @@
     .wrap{
       max-width:var(--max);
       margin:0 auto;
-      padding:44px 18px 70px;
+      padding:48px 20px 72px;
     }
     header{
+      padding-bottom:28px;
       border-bottom:1px solid var(--border);
-      padding-bottom:22px;
-      margin-bottom:22px;
+      margin-bottom:28px;
       text-align:center;
     }
     h1{
       font-size:42px;
       line-height:1.15;
-      margin:0 0 10px;
+      margin:0 0 12px;
       letter-spacing:-0.02em;
     }
     .subhead{
@@ -50,63 +51,57 @@
       font-size:18px;
     }
     .hero{
-      margin-top:18px;
       display:flex;
       flex-direction:column;
       align-items:center;
-      gap:10px;
+      gap:14px;
+      padding:22px 0 6px;
     }
-    .btn{
+    .cta{
       display:inline-block;
       background:var(--btn);
       color:var(--btnText);
       text-decoration:none;
       padding:14px 22px;
       border-radius:10px;
-      font-weight:700;
+      font-weight:650;
       font-size:16px;
       border:1px solid rgba(0,0,0,.08);
-      box-shadow: var(--shadow);
-      position:relative;
-      z-index:999999;
-      cursor:pointer;
+      box-shadow:0 8px 24px rgba(0,0,0,.08);
     }
-    .btn:active{ transform: translateY(1px); }
+    .cta:hover{background:var(--btnHover)}
     .tiny{
       color:var(--muted);
       font-size:13px;
       margin:0;
     }
-    .backup{
-      font-size:13px;
-      color:var(--muted);
-      margin:0;
-    }
-    .backup a{ color:#0b57d0; }
     .card{
       border:1px solid var(--border);
       border-radius:var(--radius);
-      padding:20px;
-      margin-top:14px;
-      background:#fff;
-      position:relative;
+      padding:22px;
+      margin-top:18px;
     }
     h2{
       font-size:22px;
-      margin:0 0 8px;
+      margin:0 0 10px;
       letter-spacing:-0.01em;
     }
-    ul,ol{ margin:10px 0 0 20px; }
-    .muted{ color:var(--muted); }
+    ul,ol{margin:10px 0 0 22px}
+    .grid{
+      display:grid;
+      grid-template-columns:1fr;
+      gap:14px;
+      margin-top:16px;
+    }
+    .muted{color:var(--muted)}
     footer{
-      margin-top:28px;
-      padding-top:16px;
+      margin-top:34px;
+      padding-top:18px;
       border-top:1px solid var(--border);
       color:var(--muted);
       font-size:13px;
-      text-align:left;
+      text-align:center;
     }
-    .center{ text-align:center; }
   </style>
 </head>
 
@@ -119,14 +114,13 @@
       </p>
 
       <div class="hero">
-        <!-- Button injected by JS so it can't be broken by stray HTML tags -->
-        <div id="cta-top"></div>
-
+        <a class="cta"
+           href="https://iltmsm.gumroad.com/l/slqxg"
+           target="_blank"
+           rel="noopener noreferrer">
+          Download the decision memo
+        </a>
         <p class="tiny">Opens Gumroad checkout in a new tab.</p>
-        <p class="backup">
-          Backup link:
-          <a id="backup-top" href="#" target="_blank" rel="noopener noreferrer">open checkout</a>
-        </p>
       </div>
     </header>
 
@@ -134,79 +128,59 @@
       <div class="card">
         <h2>Why this exists</h2>
         <p>
-          Most small companies don’t need the “best” payroll software. They need a sane default that’s widely understood
-          and won’t cause problems later.
+          Most small companies don’t need the “best” payroll software.
+          They need something that works, is widely understood, and won’t cause problems later.
         </p>
-        <p class="muted">
-          This memo ends the decision quickly so you can move on.
-        </p>
-      </div>
-
-      <div class="card">
-        <h2>What you get</h2>
-        <ul>
-          <li>A one-page PDF decision memo.</li>
-          <li>A single default recommendation (with exceptions).</li>
-          <li>A short implementation checklist.</li>
-        </ul>
-      </div>
-
-      <div class="card">
-        <h2>Who it’s for</h2>
-        <ul>
-          <li>Founders/operators at small U.S. companies</li>
-          <li>Teams hiring their first employees</li>
-          <li>Anyone stuck in comparison-tab paralysis</li>
-        </ul>
-        <p class="muted" style="margin-top:10px;">
-          Not legal, tax, or accounting advice—just a practical default.
+        <p>
+          This memo exists to end the decision quickly and give you a safe default.
         </p>
       </div>
 
-      <div class="card center">
+      <div class="grid">
+        <div class="card">
+          <h2>What you get</h2>
+          <ul>
+            <li>A one-page PDF decision memo</li>
+            <li>A single recommended default choice</li>
+            <li>Clear exceptions and edge cases</li>
+            <li>A simple implementation checklist</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h2>Who it’s for</h2>
+          <ul>
+            <li>Small U.S. companies</li>
+            <li>First hires or early teams</li>
+            <li>Founders tired of comparison charts</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h2>Fastest way to use it</h2>
+          <ol>
+            <li>Download the memo</li>
+            <li>Confirm no exception applies</li>
+            <li>Implement and move on</li>
+          </ol>
+        </div>
+      </div>
+
+      <div class="card" style="text-align:center;">
         <h2>Ready?</h2>
         <p class="muted">Less time than opening three comparison tabs.</p>
-
-        <div id="cta-bottom" style="margin-top:12px;"></div>
-
-        <p class="backup" style="margin-top:10px;">
-          Backup link:
-          <a id="backup-bottom" href="#" target="_blank" rel="noopener noreferrer">open checkout</a>
-        </p>
+        <a class="cta"
+           href="https://iltmsm.gumroad.com/l/slqxg"
+           target="_blank"
+           rel="noopener noreferrer">
+          Download the decision memo
+        </a>
       </div>
 
       <footer>
-        If you later build a bundle: create a second Gumroad product (bundle SKU) and link to it here.
+        <p>If you later create a bundle, link it as a separate Gumroad product.</p>
       </footer>
     </main>
   </div>
-
-  <script>
-    // SINGLE SOURCE OF TRUTH: change it here once, and both buttons + backups update.
-    const CHECKOUT_URL = "https://iltmsm.gumroad.com/l/slqxg?wanted=true";
-
-    function makeButton(text) {
-      const a = document.createElement("a");
-      a.className = "btn";
-      a.href = CHECKOUT_URL;
-      a.target = "_blank";
-      a.rel = "noopener noreferrer";
-      a.textContent = text;
-
-      // Defensive: force browser to navigate exactly to the href on click
-      a.addEventListener("click", (e) => {
-        e.preventDefault();
-        window.open(CHECKOUT_URL, "_blank", "noopener,noreferrer");
-      });
-
-      return a;
-    }
-
-    document.getElementById("cta-top").appendChild(makeButton("Download the decision memo — $9"));
-    document.getElementById("cta-bottom").appendChild(makeButton("Download the decision memo"));
-
-    document.getElementById("backup-top").href = CHECKOUT_URL;
-    document.getElementById("backup-bottom").href = CHECKOUT_URL;
-  </script>
 </body>
 </html>
