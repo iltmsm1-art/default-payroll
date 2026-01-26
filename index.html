@@ -4,8 +4,8 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <title>If You Need Payroll for a Small U.S. Company</title>
-  <meta name="description" content="A one-page decision memo that picks a sensible default payroll tool for small U.S. companies." />
+  <title>Small Business Software Decisions</title>
+  <meta name="description" content="One-page decision memos: pick a default tool fast. Buy individually or get the bundle." />
 
   <style>
     :root{
@@ -16,6 +16,7 @@
       --btn:#111;
       --btnText:#fff;
       --btnHover:#000;
+      --link:#0b57d0;
       --max:900px;
       --radius:14px;
     }
@@ -36,26 +37,27 @@
       padding:10px 0 28px;
       border-bottom:1px solid var(--border);
       margin-bottom:28px;
-      text-align:center;
     }
     h1{
       font-size:42px;
       line-height:1.15;
       margin:0 0 12px;
       letter-spacing:-0.02em;
+      text-align:center;
     }
     .subhead{
       margin:0 auto;
       max-width:720px;
       color:var(--muted);
       font-size:18px;
+      text-align:center;
     }
     .hero{
       display:flex;
       flex-direction:column;
       align-items:center;
-      gap:14px;
-      padding:26px 0 6px;
+      gap:12px;
+      padding:22px 0 6px;
     }
     .cta{
       display:inline-block;
@@ -67,12 +69,20 @@
       font-weight:650;
       font-size:16px;
       border:1px solid rgba(0,0,0,.08);
-      box-shadow:0 8px 24px rgba(0,0,0,.08);
+      box-shadow: 0 8px 24px rgba(0,0,0,.08);
+      text-align:center;
+      min-width: 280px;
     }
     .cta:hover{background:var(--btnHover)}
+    .cta.bundle{
+      background: var(--link);
+      border-color: rgba(11,87,208,.25);
+    }
+    .cta.bundle:hover{filter:brightness(0.92)}
     .tiny{
       color:var(--muted);
       font-size:13px;
+      text-align:center;
       margin:0;
     }
     .card{
@@ -86,21 +96,65 @@
       margin:0 0 10px;
       letter-spacing:-0.01em;
     }
-    ul, ol{margin:10px 0 0 22px}
+    .muted{color:var(--muted)}
+    a{color:var(--link)}
     .grid{
       display:grid;
-      grid-template-columns:1fr;
+      grid-template-columns: 1fr;
       gap:14px;
       margin-top:16px;
     }
-    .muted{color:var(--muted)}
+    .product{
+      display:flex;
+      flex-direction:column;
+      gap:10px;
+    }
+    .product .meta{
+      display:flex;
+      align-items:baseline;
+      justify-content:space-between;
+      gap:12px;
+    }
+    .product .title{
+      font-weight:700;
+      font-size:18px;
+      margin:0;
+    }
+    .pill{
+      font-size:12px;
+      color:var(--muted);
+      border:1px solid var(--border);
+      border-radius:999px;
+      padding:4px 10px;
+      white-space:nowrap;
+    }
+    .product .desc{margin:0; color:var(--muted)}
+    .btnrow{
+      display:flex;
+      gap:10px;
+      flex-wrap:wrap;
+    }
+    .btnrow .cta{
+      min-width: 220px;
+      padding:12px 18px;
+      font-size:15px;
+      box-shadow:none;
+    }
     footer{
       margin-top:34px;
       padding-top:18px;
       border-top:1px solid var(--border);
       color:var(--muted);
       font-size:13px;
-      text-align:center;
+    }
+
+    @media (min-width: 820px){
+      .grid{
+        grid-template-columns: 1fr 1fr;
+      }
+      .product .btnrow .cta{
+        min-width: 240px;
+      }
     }
   </style>
 </head>
@@ -108,81 +162,98 @@
 <body>
   <div class="wrap">
     <header>
-      <h1>If You Need Payroll for a Small U.S. Company</h1>
+      <h1>Small Business Software Decisions</h1>
       <p class="subhead">
-        A default decision memo for teams that don’t want payroll to become a project.
+        One-page decision memos for small teams. Pick a sensible default fast — buy one, or grab all four as a bundle.
       </p>
 
       <div class="hero">
-        <a class="cta"
-           href="https://iltmsm.gumroad.com/l/sqlxg" 
-           target="_blank"
-           rel="noopener noreferrer">
-          Download the decision memo
+        <a class="cta bundle"
+           href="https://gumroad.com/bundles/iiKD0JhRqVvLZkt5rWrMeA=="
+           target="_blank" rel="noopener noreferrer">
+          Get all 4 decision memos (Bundle)
         </a>
+
         <p class="tiny">Opens Gumroad checkout in a new tab.</p>
       </div>
     </header>
 
     <main>
       <div class="card">
-        <h2>Why this exists</h2>
+        <h2>What you’re buying</h2>
         <p>
-          Most small companies don’t need the “best” payroll software.
-          They need something that works, is widely understood, and won’t cause problems later.
-        </p>
-        <p>
-          This memo exists to end the decision and let you move on.
+          Each memo is short on purpose: it gives you a safe default choice, the few exceptions, and a simple path to implement.
+          No comparison-tab spiral. No “ultimate guide.”
         </p>
       </div>
 
       <div class="grid">
-        <div class="card">
-          <h2>What you get</h2>
-          <ul>
-            <li>A one-page PDF decision memo</li>
-            <li>A single recommended default choice</li>
-            <li>Clear exceptions when to choose something else</li>
-            <li>A simple implementation checklist</li>
-          </ul>
+        <div class="card product">
+          <div class="meta">
+            <p class="title">Payroll Decision Memo</p>
+            <span class="pill">$9 • PDF</span>
+          </div>
+          <p class="desc">Pick a default payroll tool for a small U.S. company.</p>
+          <div class="btnrow">
+            <a class="cta" href="https://iltmsm.gumroad.com/l/sqlxg" target="_blank" rel="noopener noreferrer">
+              Download / Buy Payroll Memo
+            </a>
+          </div>
         </div>
 
-        <div class="card">
-          <h2>Who it’s for</h2>
-          <ul>
-            <li>Small U.S. companies</li>
-            <li>Founders hiring their first employees</li>
-            <li>Anyone stuck in comparison-tab paralysis</li>
-          </ul>
-          <p class="muted" style="margin-top:10px;">
-            Not legal, tax, or accounting advice.
-          </p>
+        <div class="card product">
+          <div class="meta">
+            <p class="title">Password Manager for a Small Team</p>
+            <span class="pill">$9 • PDF</span>
+          </div>
+          <p class="desc">Pick a default password manager and set it up quickly.</p>
+          <div class="btnrow">
+            <a class="cta" href="https://iltmsm.gumroad.com/l/peugy" target="_blank" rel="noopener noreferrer">
+              Download / Buy Password Memo
+            </a>
+          </div>
         </div>
 
-        <div class="card">
-          <h2>Fastest way to use it</h2>
-          <ol>
-            <li>Download the memo</li>
-            <li>Confirm you don’t hit an exception</li>
-            <li>Implement and move on</li>
-          </ol>
+        <div class="card product">
+          <div class="meta">
+            <p class="title">E-Signature Tool</p>
+            <span class="pill">$9 • PDF</span>
+          </div>
+          <p class="desc">Pick a default e-signature tool and avoid overbuying.</p>
+          <div class="btnrow">
+            <a class="cta" href="https://iltmsm.gumroad.com/l/ibrujp" target="_blank" rel="noopener noreferrer">
+              Download / Buy E-Signature Memo
+            </a>
+          </div>
+        </div>
+
+        <div class="card product">
+          <div class="meta">
+            <p class="title">Accounting Software for a Small U.S. Company</p>
+            <span class="pill">$9 • PDF</span>
+          </div>
+          <p class="desc">Pick a default accounting tool with the least future pain.</p>
+          <div class="btnrow">
+            <a class="cta" href="https://iltmsm.gumroad.com/l/qhzhdc" target="_blank" rel="noopener noreferrer">
+              Download / Buy Accounting Memo
+            </a>
+          </div>
         </div>
       </div>
 
-      <div class="card" style="text-align:center;">
-        <h2>Ready?</h2>
-        <p class="muted">Less time than opening three comparison tabs.</p>
-        <a class="cta"
-           href="https://iltmsm.gumroad.com/l/sqlxg"
-           target="_blank"
-           rel="noopener noreferrer">
-          Download the decision memo
+      <div class="card" style="margin-top:18px; text-align:center;">
+        <h2>Want everything?</h2>
+        <p class="muted">Buy once, get all four.</p>
+        <a class="cta bundle"
+           href="https://gumroad.com/bundles/iiKD0JhRqVvLZkt5rWrMeA=="
+           target="_blank" rel="noopener noreferrer">
+          Get the Bundle
         </a>
       </div>
 
       <footer>
-        <p>
-          Future bundles should be separate Gumroad products and linked here.
+        <p style="margin:0;">
+          All purchases are fulfilled by Gumroad. If you ever change a product URL, update it here in one place and commit.
         </p>
       </footer>
     </main>
